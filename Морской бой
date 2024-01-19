@@ -37,6 +37,7 @@ shiptSunk:0;
 ships[{{location ["0","0","0"},hits["","",""]};
 {locations ["0","0","0"},hits["","",""]};
 {locations ["0","0","0"},hits["","",""]};
+], 
 fize function (guess){....}
 isSunk: funtion (ship){...}
 generateShipLocation function(){...}
