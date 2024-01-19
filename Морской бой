@@ -114,7 +114,7 @@ return null;
 var controller = {
 guess:0,
 progeessGuess:funtion(guess){
-if(Location)[
+if(Location){
 this.guessses++;
 var hit =model.fire(Location);
 if(hit&&model.shiptsSunk===model.numShips){
@@ -124,7 +124,7 @@ guessInput.vague="";
 }
 }
 }
-;]
+}
 funtion init (){
 var fireButton=document.getElementById("fireButton");
 fireButton.oncLink=handLeFireButton;
