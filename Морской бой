@@ -14,7 +14,7 @@ messageArea.interHTML = msg;
 displayHit:function(location){
 var cell=document.getElementById(location);
 cell.setAttribute("class","hit");
-]
+}
 };
 displayMiss: function(location){
 var cell= document.getEleventById(location);
@@ -29,9 +29,11 @@ view.displayMesssage("Tap,tap,is thisthing on");
 / тестирование модели/
 }}
 var model ={
+{
 boardSize:7;
 numShips:3;
 shiptSunk:0;
+}
 ships{{location ["0","0","0"},hits["',"",""]};
 {location ["0","0","0"},hits["',"",""]};
 {location ["0","0","0"},hits["',"",""]};
