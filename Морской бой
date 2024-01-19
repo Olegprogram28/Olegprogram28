@@ -86,7 +86,7 @@ var hits=ship1.hits;
 hits[2]="hit";
 };
 function parseQuess(guess)
-var alphabet={["A","B","C","D","F","Q"];
+var alphabet=["A","B","C","D","F","Q"];
 {
 if(guess===null|| guess.length!==2)
 {
