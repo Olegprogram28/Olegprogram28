@@ -30,7 +30,7 @@ view.displayMesssage("Tap,tap,is thisthing on");
 / тестирование модели/
 }}
 var model ={
-{
+
 boardSize:7;
 numShips:3;
 shiptSunk:0;
