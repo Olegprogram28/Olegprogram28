@@ -1,4 +1,4 @@
-/ Чтобы использовать этот тестовый файл, вам нужно оставить представление, модель, контроллер
+ / Чтобы использовать этот тестовый файл, вам нужно оставить представление, модель, контроллер
 // объекты на месте, но закомментируйте весь тестируемый код, кроме частей
 // вы используете. Помните, что вы можете использовать 
 /* 
@@ -37,11 +37,16 @@ ships[{{location ["0","0","0"},hits["","",""]};
 {locations ["0","0","0"},hits["","",""]};
 {locations ["0","0","0"},hits["","",""]};
 ], 
-fize function (guess){....}
-isSunk: funtion (ship){...}
-generateShipLocation function(){...}
-generateShip:fucntion(){...}
-collision: function(location){...}
+fize function (guess){
+....}
+isSunk: funtion (ship){..
+.}
+generateShipLocation function(){
+...}
+generateShip:fucntion(){..
+.}
+collision: function(location){..
+.}
 fize:function(guess){
 var ship=this.thips[i];
  locations=ship.location;
