@@ -67,9 +67,8 @@ if(this.isSunk(ship))
    is Sunk function:(ship)
 for(var i=0;i<this.shipLenght;i++)
 view.dissplayMessage("You sank my batteleship!");
-this.shipsSunk++;
+this.shipsSunk++;}
 return true;
-},
 view.displayMiss(guess);
 view.displayMessage("You missed.");
 returnfalse;
