@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning ..C++,Java, JavaScript.
 - 💞️ I’m looking to collaborate on JavaScript, Java. 
 - 📫 How to reach me  oleg19ahj@mail.ru .
-- ☺ I'm to RGGY. programist 4.5 year, prikladnai informatika vs information sfera.Learn JavaScript  book Elizabeth Robson  2017 RU. (Изучаем Программирование на   JavaScript, 2017 год :) (Прикладная информатика в ИС)
+- ☺ I'm to RGGU. programist 4.5 year, prikladnai informatika vs information sfera.Learn JavaScript  book Elizabeth Robson  2017 RU. (Изучаем Программирование на   JavaScript, 2017 год :) (Прикладная информатика в ИС)
 - I learned it for 1 month. 
 <!---
 Olegprogram28/Olegprogram28 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
