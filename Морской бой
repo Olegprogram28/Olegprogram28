@@ -5,7 +5,9 @@
  // тестирование представления
 */
 // для закомментирования больших кусков кода.
+/*
 // Elizabeth Robson & Eric Freeman 
+/*
 var view  =   {
 displayMessage:function(msg){
   var messageArea=document.getElementById("messageArea");
