@@ -55,7 +55,7 @@ var ship=this.thips[i];
 if (ship.hits[index] === "hit") {
 				view.displayMessage("Oops, you already hit that location!");
 				return true;
-if(index>=0){
+ else }if(index>=0){
 ship.hits[index] = "hit";
 				view.displayHit(guess);
 				view.displayMessage("HIT!");
