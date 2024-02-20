@@ -56,6 +56,10 @@ if (ship.hits[index] === "hit") {
 				view.displayMessage("Oops, you already hit that location!");
 				return true;
 if(index>=0){
+ship.hits[index] = "hit";
+				view.displayHit(guess);
+				view.displayMessage("HIT!");
+
 ship.hits[index]="hit";
 wiew.displayHit(guess);
 wiew.displayMessage("HIT");
