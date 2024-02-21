@@ -119,6 +119,15 @@ guessInput.vague="";
 }
 }
 }
+generateShipLocations: function(){
+var locations;
+for(var i=0;i<this.numShisps;i++){
+do {
+locations=this.generatateShip();
+}while(this.collision(locations));
+this.ships[i].locations=locations;
+}
+},
 funtion init (){
 var fireButton=document.getElementById("fireButton");
 fireButton.oncLink=handLeFireButton;
@@ -133,15 +142,7 @@ controller.processGuess(guess);
 }
 windows.onLoad=init;
 }
-generateShipLocations: function(){
-var locations;
-for(var i=0;i<this.numShisps;i++){
-do {
-locations=this.generatateShip();
-}while(this.collision(locations));
-this.ships[i].locations=locations;
-}
-},
+
 generateShip:funtion(){
 var direction=Math.floor(Math.random()*2);
 var row,col;
