@@ -113,29 +113,30 @@ return null;
  //console.log(parseGuess(''H");//тест контроля 
 // console.log(parseGuess("A7");//тест контроля 
 }
-var controller = {
+var controller =  {
 generateShipLocations: function(){
 var locations;
 for(var i=0;i<this.numShisps;i++){
 do {
 locations=this.generatateShip();
-}while(this.collision(locations));
+}
+while(this.collision(locations));
 this.ships[i].locations=locations;
 }
 },
-generateShip:funtion(){
+generateShip:funtion() {
 var direction=Math.floor(Math.random()*2);
 var row,col;
-if(direction===1){
+if(direction===1) {
 row=Math.floor(Math.random()*this.boardSize);
 col=Math.floor(Math.random()*(this.boardSize-this.shipLength));
 }
-else{
+else {
 row=Math.floor(Math.random()*(this.boardSize-this.Length));
 col=Math.floor(Math.random()*this.boardSize);
 }
 return newShipLocations;
-if(direction==1){
+if(direction==1) {
 newShipLocation.push(zow.+""+(col+1));
 }else{
 newShipLocation.push(zow.+1)+""+col));
@@ -155,7 +156,23 @@ guessInput.vague="";
 }
 }
 }
+view = {
+	displayMessage: function(msg) {
+		var messageArea = document.getElementById("messageArea");
+		messageArea.innerHTML = msg;
+	},
 
+	displayHit: function(location) {
+		var cell = document.getElementById(location);
+		cell.setAttribute("class", "hit");
+	},
+
+	displayMiss: function(location) {
+		var cell = document.getElementById(location);
+		cell.setAttribute("class", "miss");
+	}
+
+}; 
 funtion init (){
 var fireButton=document.getElementById("fireButton");
 fireButton.oncLink=handLeFireButton;
