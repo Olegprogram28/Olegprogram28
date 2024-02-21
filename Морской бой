@@ -114,19 +114,6 @@ return null;
 // console.log(parseGuess("A7");//тест контроля 
 }
 var controller = {
-guess:0,
-progeessGuess:funtion(guess){
-if(Location){
-this.guessses++;
-var hit =model.fire(Location);
-if(hit&&model.shiptsSunk===model.numShips){
-vitw.displayMessage("You, sank all my batteleships,in",+this.guesses+"guesses");
-controler.progecess.Guess(guess);
-guessInput.vague="";
-}
-}
-}
-}
 generateShipLocations: function(){
 var locations;
 for(var i=0;i<this.numShisps;i++){
@@ -155,6 +142,20 @@ newShipLocation.push(zow.+1)+""+col));
 }
 return newShipLocations;
 },
+guess:0,
+progeessGuess:funtion(guess){
+if(Location){
+this.guessses++;
+var hit =model.fire(Location);
+if(hit&&model.shiptsSunk===model.numShips){
+vitw.displayMessage("You, sank all my batteleships,in",+this.guesses+"guesses");
+controler.progecess.Guess(guess);
+guessInput.vague="";
+}
+}
+}
+}
+
 funtion init (){
 var fireButton=document.getElementById("fireButton");
 fireButton.oncLink=handLeFireButton;
