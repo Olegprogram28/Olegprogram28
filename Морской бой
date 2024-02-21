@@ -78,6 +78,18 @@ var ships=ships[0];
 var hits=ship1.hits;
 hits[2]="hit";
 };
+collision: function(locations) {
+		for (var i = 0; i < this.numShips; i++) {
+			var ship = this.ships[i];
+			for (var j = 0; j < locations.length; j++) {
+				if (ship.locations.indexOf(locations[j]) >= 0) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
+	
 function parseQuess(guess)
 var alphabet=["A","B","C","D","F","Q"];
 {
