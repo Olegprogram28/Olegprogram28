@@ -128,21 +128,6 @@ locations=this.generatateShip();
 this.ships[i].locations=locations;
 }
 },
-funtion init (){
-var fireButton=document.getElementById("fireButton");
-fireButton.oncLink=handLeFireButton;
-var guessInput=document.getElementById("guessInput");
-guessInput.onkeypress=handLeKeyPress;
-model.generateShipLocations();
-},
-funtion handleFireButton(){
-var guessInput=document.gettElementById("guessInput");
-var guess=guessInput.value;
-controller.processGuess(guess);
-}
-windows.onLoad=init;
-}
-
 generateShip:funtion(){
 var direction=Math.floor(Math.random()*2);
 var row,col;
@@ -162,6 +147,20 @@ newShipLocation.push(zow.+1)+""+col));
 }
 return newShipLocations;
 },
+funtion init (){
+var fireButton=document.getElementById("fireButton");
+fireButton.oncLink=handLeFireButton;
+var guessInput=document.getElementById("guessInput");
+guessInput.onkeypress=handLeKeyPress;
+model.generateShipLocations();
+},
+funtion handleFireButton(){
+var guessInput=document.gettElementById("guessInput");
+var guess=guessInput.value;
+controller.processGuess(guess);
+}
+windows.onLoad=init;
+}
 collision:function(locations){
 for(var i=0;i<this.numShips;I++){
 var ship=model.ships[i];
