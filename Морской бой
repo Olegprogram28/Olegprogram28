@@ -9,35 +9,10 @@
 // Elizabeth Robson & Eric Freeman 
 */
 /*
-//var view  =   {
-//displayMessage:function(msg){//
- // var messageArea=document.getElementById("messageArea");//
-//messageArea.interHTML = msg;//
-},//
-//
-*/
+
+
 /*
-//  var messageArea = document.getElementById("messageArea");//
-//displayHit:function(location){//
-//var cell=document.getElementById(location);//
-//cell.setAttribute("class","hit");//
-}
-};
-*/
-/*
-//displayMiss: function(location){//
-//var cell= document.getEleventById(location);//
-//cell.setAttribute("class","miss"); //
-//wiew.displayMiss("00");//
-//wiew.displayHit("34");//
-//wiew.displayMiss("55");//
-//wiew.displayHit("12"); //
-//wiew.displayMiss("25");//
-//wiew.displayHit("26");//
-//view.displayMesssage("Tap,tap,is thisthing on");//
-/ тестирование модели/;
-*/
-}}
+
 var model ={
 boardSize:7, 
 numShips:3, 
