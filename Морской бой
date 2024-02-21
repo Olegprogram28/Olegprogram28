@@ -7,6 +7,7 @@
 // для закомментирования больших кусков кода.
 /*
 // Elizabeth Robson & Eric Freeman 
+*/
 /*
 //var view  =   {
 //displayMessage:function(msg){//
@@ -14,13 +15,15 @@
 //messageArea.interHTML = msg;//
 },//
 //
-
-  var messageArea = document.getElementById("messageArea");
-displayHit:function(location){
-var cell=document.getElementById(location);
-cell.setAttribute("class","hit");
+*/
+/*
+//  var messageArea = document.getElementById("messageArea");//
+//displayHit:function(location){//
+//var cell=document.getElementById(location);//
+//cell.setAttribute("class","hit");//
 }
 };
+*/
 /*
 //displayMiss: function(location){//
 //var cell= document.getEleventById(location);//
@@ -33,7 +36,7 @@ cell.setAttribute("class","hit");
 //wiew.displayHit("26");//
 //view.displayMesssage("Tap,tap,is thisthing on");//
 / тестирование модели/;
-//
+*/
 }}
 var model ={
 boardSize:7, 
