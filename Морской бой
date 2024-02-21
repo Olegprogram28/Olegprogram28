@@ -59,12 +59,11 @@ returnfalse;
 isSunk:function(ship){
 for(var i=0;i<this.shipLength;i++)
 if(ship.hits[i]!=="hit"){
-returnfalse;
+return false;}
 }gene
 console.log("ship.arrai");
 console .log ("this.ships");
 },
-}
 };
 var ship2=ship[1];
 var locations=ship2.locations;
