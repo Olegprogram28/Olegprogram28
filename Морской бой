@@ -169,14 +169,4 @@ controller.processGuess(guess);
 }
 windows.onLoad=init;
 }
-collision:function(locations){
-for(var i=0;i<this.numShips;I++){
-var ship=model.ships[i];
-for(var j=0;J<locations.length;J++){
-if(ship.location.indexOf(Locations{j})>=0){
-return true;
-}
-}
-}
-return false;
-}
+
