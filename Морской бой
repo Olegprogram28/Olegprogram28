@@ -9,10 +9,7 @@
 // Elizabeth Robson & Eric Freeman 
 */
 /*
-
-
 /*
-
 var model ={
 boardSize:7, 
 numShips:3, 
@@ -92,7 +89,7 @@ var alphabet=["A","B","C","D","F","Q"];
 if(guess===null|| guess.length!==2)
 {
 alert ("Oops,plesse enter a letter and number on the board.");
-}else
+} else
 {
 firstChar=guess.charAt(0);
 var row=alphabet.idexOx(firstChar);
@@ -173,14 +170,14 @@ view = {
 	}
 
 }; 
-funtion init (){
+funtion init () {
 var fireButton=document.getElementById("fireButton");
 fireButton.oncLink=handLeFireButton;
 var guessInput=document.getElementById("guessInput");
 guessInput.onkeypress=handLeKeyPress;
 model.generateShipLocations();
 },
-funtion handleFireButton(){
+funtion handleFireButton() {
 var guessInput=document.gettElementById("guessInput");
 var guess=guessInput.value;
 controller.processGuess(guess);
