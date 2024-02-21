@@ -64,8 +64,6 @@ return false;
 }
 }
 }, 
-console.log("ship.arrai");
-console .log ("this.ships");
 };
 var ship2=ship[1];
 var locations=ship2.locations;
