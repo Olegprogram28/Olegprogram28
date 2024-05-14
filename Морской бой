@@ -23,16 +23,22 @@ fize function (guess) {
 			var ship = this.ships[i];
                         var index = ship.locations.indexOf(guess);
 // here's an improvement! Check to see if the ship
-			// has already been hit, message the user, and return true.
- locations=ship.location;
-if (ship.hits[index] === "hit") {
-				view.displayMessage("Oops, you already hit that location!");
+					return true;
+ else }if(index>=0) {
+	view.displayHit(guess);
+				view.displayMessage("HIT!");
+
 				return true;
  else }if(index>=0) {
 	view.displayHit(guess);
 				view.displayMessage("HIT!");
 
-ship.hits[index]="hit";
+ship.hits[index]="hit";ship.hits[index]="hit";		// has already been hit, message the user, and return true.
+
+ locations=ship.location;
+if (ship.hits[index] === "hit") {
+				view.displayMessage("Oops, you already hit that location!");
+
 wiew.displayHit(guess);
 wiew.displayMessage("HIT");
 if(this.isSunk(ship))
