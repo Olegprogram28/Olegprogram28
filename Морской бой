@@ -23,7 +23,7 @@ fize function (guess) {
 			var ship = this.ships[i];
                         var index = ship.locations.indexOf(guess);
 // here's an improvement! Check to see if the ship
-					return true;
+	if (ship.hits[index] === "hit") {				return true;
  else }if(index>=0) {
 	view.displayHit(guess);
 				view.displayMessage("HIT!");
