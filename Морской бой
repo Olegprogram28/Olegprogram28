@@ -45,9 +45,7 @@ view.displayMiss(guess);
 		view.displayMessage("You missed.");
 		return false;
 	},
-ship.hits[index]="hit";
-wiew.displayHit(guess);
-wiew.displayMessage("HIT");
+
 if(this.isSunk(ship))
    is Sunk function:(ship)
 for(var i=0;i<this.shipLenght;i++)
