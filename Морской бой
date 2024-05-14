@@ -19,9 +19,34 @@ ships[{{location ["0","0","0"},hits["","",""]},
 {locations ["0","0","0"},hits["","",""]}
  ], 
 fize function (guess) {
-for (var i = 0; i < this.numShips; i++) {
-			var ship = this.ships[i];
-			var index = ship.locations.indexOf(guess);
+ 
+var ship=this.thips[i];
+ locations=ship.location;
+if (ship.hits[index] === "hit") {
+				view.displayMessage("Oops, you already hit that location!");
+				return true;
+ else }if(index>=0) {
+	view.displayHit(guess);
+				view.displayMessage("HIT!");
+
+ship.hits[index]="hit";
+wiew.displayHit(guess);
+wiew.displayMessage("HIT");
+if(this.isSunk(ship))
+   is Sunk function:(ship)
+for(var i=0;i<this.shipLenght;i++)
+view.dissplayMessage("You sank my batteleship!");
+this.shipsSunk++;
+ }
+ship.hits[index]="hit";
+wiew.displayHit(guess);
+wiew.displayMessage("HIT");
+if(this.isSunk(ship))
+   is Sunk function:(ship)
+for(var i=0;i<this.shipLenght;i++)
+view.dissplayMessage("You sank my batteleship!");
+this.shipsSunk++;
+ }		var index = ship.locations.indexOf(guess);
 
  }
 isSunk: funtion (ship){..
