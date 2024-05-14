@@ -218,4 +218,3 @@ controller.processGuess(guess);
 }
 windows.onLoad=init;
 }
-
