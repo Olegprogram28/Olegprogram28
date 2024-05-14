@@ -48,8 +48,7 @@ if(this.isSunk(ship))
 for(var i=0;i<this.shipLenght;i++)
 view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
- }		var index = ship.locations.indexOf(guess);
-
+ }		
  }
 isSunk: funtion (ship){..
  }
