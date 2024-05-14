@@ -39,7 +39,6 @@ for(var i=0;i<this.shipLenght;i++)
 view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
  }
-
 ship.hits[index]="hit";
 wiew.displayHit(guess);
 wiew.displayMessage("HIT");
