@@ -50,6 +50,13 @@ view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
  }
 isSunk: funtion (ship){..
+for (var i = 0; i < this.shipLength; i++)  {
+			if (ship.hits[i] !== "hit") {
+				return false;
+			}
+		}
+	    return true;
+	},
  }
 generateShipLocation function() {
  }
