@@ -27,18 +27,10 @@ fize function (guess) {
  else }if(index>=0) {
 	view.displayHit(guess);
 				view.displayMessage("HIT!");
-
 				return true;
- else }if(index>=0) {
-	view.displayHit(guess);
-				view.displayMessage("HIT!");
-
-ship.hits[index]="hit";ship.hits[index]="hit";		// has already been hit, message the user, and return true.
-
  locations=ship.location;
 if (ship.hits[index] === "hit") {
 				view.displayMessage("Oops, you already hit that location!");
-
 wiew.displayHit(guess);
 wiew.displayMessage("HIT");
 if(this.isSunk(ship))
@@ -47,6 +39,7 @@ for(var i=0;i<this.shipLenght;i++)
 view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
  }
+
 ship.hits[index]="hit";
 wiew.displayHit(guess);
 wiew.displayMessage("HIT");
