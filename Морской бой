@@ -36,14 +36,14 @@ if(this.isSunk(ship))
 for(var i=0;i<this.shipLenght;i++)
 view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
- }
+     }
 return true;
- }
+   }
 view.displayMiss(guess);
 		view.displayMessage("You missed.");
 		return false;
 	},
- }
+  }
 isSunk: funtion (ship){..
 for (var i = 0; i < this.shipLength; i++)  {
 			if (ship.hits[i] !== "hit") {
@@ -54,6 +54,25 @@ for (var i = 0; i < this.shipLength; i++)  {
 	},
  }
 generateShipLocation function() {
+generateShip:funtion() {
+var direction=Math.floor(Math.random()*2);
+var row,col;
+if(direction===1) {
+row=Math.floor(Math.random()*this.boardSize);
+col=Math.floor(Math.random()*(this.boardSize-this.shipLength));
+ }
+else {
+row=Math.floor(Math.random()*(this.boardSize-this.Length));
+col=Math.floor(Math.random()*this.boardSize);
+ }
+return newShipLocations;
+if(direction==1) {
+newShipLocation.push(zow.+""+(col+1));
+ } else {
+newShipLocation.push(zow.+1)+""+col));
+ }
+return newShipLocations;
+ },
  }
 generateShip:fucntion() {..
  }
@@ -152,17 +171,6 @@ while(this.collision(locations));
 this.ships[i].locations=locations;
  }
  },
-generateShip:funtion() {
-var direction=Math.floor(Math.random()*2);
-var row,col;
-if(direction===1) {
-row=Math.floor(Math.random()*this.boardSize);
-col=Math.floor(Math.random()*(this.boardSize-this.shipLength));
- }
-else {
-row=Math.floor(Math.random()*(this.boardSize-this.Length));
-col=Math.floor(Math.random()*this.boardSize);
- }
 return newShipLocations;
 if(direction==1) {
 newShipLocation.push(zow.+""+(col+1));
