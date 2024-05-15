@@ -50,6 +50,21 @@ for (var i = 0; i < this.shipLength; i++)  {
 	},
  }
 generateShipLocation function() {
+var locations;
+for(var i=0;i<this.numShisps;i++) {
+do {
+locations=this.generatateShip();
+ }
+while(this.collision(locations));
+this.ships[i].locations=locations;
+ }
+ },
+return newShipLocations;
+if(direction==1) {
+newShipLocation.push(zow.+""+(col+1));
+ } else {
+newShipLocation.push(zow.+1)+""+col));
+ }
 generateShip:funtion() {
 var direction=Math.floor(Math.random()*2);
 var row,col;
