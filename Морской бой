@@ -201,7 +201,6 @@ guessInput.vague="";
 }
 }
 }
-}
 view = {
 	displayMessage: function(msg) {
 		var messageArea = document.getElementById("messageArea");
@@ -217,7 +216,6 @@ view = {
 		var cell = document.getElementById(location);
 		cell.setAttribute("class", "miss");
 	}
-
 }; 
 funtion init () {
 var fireButton=document.getElementById("fireButton");
