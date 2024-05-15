@@ -85,7 +85,6 @@ newShipLocation.push(zow.+1)+""+col));
 return newShipLocations;
  },
  }
-generateShip:fucntion() {..
  }
 collision: function(location){..
  }
