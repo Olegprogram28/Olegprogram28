@@ -6,7 +6,7 @@
 // для закомментирования больших кусков кода.
 // Elizabeth Robson & Eric Freeman 
 /*
-var model = {
+var model ={
 boardSize:7, 
 numShips:3, 
 shiptSunk:0, 
