@@ -11,9 +11,9 @@ boardSize:7,
 numShips:3, 
 shiptSunk:0, 
 ships[
-{{location ["0","0","0"},hits["","",""]}, 
-{locations ["0","0","0"},hits["","",""]}, 
-{locations ["0","0","0"},hits["","",""]}
+{{location ["0","0","0"]},hits["","",""]}, 
+{locations ["0","0","0"]},hits["","",""]}, 
+{locations ["0","0","0"]},hits["","",""]}
 ], 
 fize function (guess) {
  for (var i = 0; i < this.numShips; i++) {
