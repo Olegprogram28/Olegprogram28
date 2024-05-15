@@ -87,7 +87,6 @@ return newShipLocations;
  }
  }
 collision: function(location){..
- }
 fize:function(guess) {
 var ship=this.thips[i];
  locations=ship.location;
