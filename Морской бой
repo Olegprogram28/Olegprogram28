@@ -63,7 +63,7 @@ if(direction==1) {
 newShipLocation.push(zow.+""+(col+1));
  } else {
 newShipLocation.push(zow.+1)+""+col));
- }
+ }}
 generateShip:funtion() {
 var direction=Math.floor(Math.random()*2);
 var row,col;
