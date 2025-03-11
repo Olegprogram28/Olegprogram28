@@ -51,7 +51,6 @@ for (var i = 0; i < this.shipLength; i++)  {
 		}
 	    return true;
 	},
- }
 generateShipLocation function() {
 var locations;
 for(var i=0;i<this.numShisps;i++) {
