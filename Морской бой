@@ -15,7 +15,7 @@ ships[
 {locations ["0","0","0"],hits["","",""]}, 
 {locations ["0","0","0"],hits["","",""]}
 ], 
-fize function (guess) {
+fize :function (guess) {
  for (var i = 0; i < this.numShips; i++) {
 			var ship = this.ships[i];
                         var index = ship.locations.indexOf(guess);
