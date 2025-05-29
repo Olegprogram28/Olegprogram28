@@ -16,7 +16,7 @@ ships:[
 {locations ["0","0","0"],hits["","",""]}
 ],
 fize :function (guess) {
- for (var i = 0; i < this.numships; i++) {
+ for ( let i = 0; i < this.numships; i++) {
 			var ship = this.ships[i];
                         var index = ship.locations.indexOf(guess);
 // here's an improvement! Check to see if the ship
