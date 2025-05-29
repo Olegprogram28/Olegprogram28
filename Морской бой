@@ -8,7 +8,7 @@
 /*
 var model = {
 boardSize:7, 
-numShips:3, 
+numships:3, 
 shiptSunk:0, 
 ships:[
 {{location ["0","0","0"],hits["","",""]}, 
@@ -16,7 +16,7 @@ ships:[
 {locations ["0","0","0"],hits["","",""]}
 ],
 fize :function (guess) {
- for (var i = 0; i < this.numShips; i++) {
+ for (var i = 0; i < this.numships; i++) {
 			var ship = this.ships[i];
                         var index = ship.locations.indexOf(guess);
 // here's an improvement! Check to see if the ship
@@ -28,9 +28,9 @@ fize :function (guess) {
  locations=ship.location;
 if (ship.hits[index] === "hit") {
 				view.displayMessage("Oops, you already hit that location!");
-if(this.isSunk(ship))
+if(this.issunk(ship))
    is Sunk function:(ship)
-for(var i=0;i<this.shipLenght;i++)
+for(var i=0;i<this.shiplenght;i++)
 view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
      }
@@ -44,18 +44,18 @@ view.displayMiss(guess);
 	},
   
 isSunk: funtion (ship){..
-for (var i = 0; i < this.shipLength; i++)  {
+for (var i = 0; i < this.shiplength; i++)  {
 			if (ship.hits[i] !== "hit") {
 				return false;
 			}
 		}
 	    return true;
 	},
-generateShipLocation: function() {
+generateshipLocation: function() {
 var locations;
-for(var i=0;i<this.numShisps;i++) {
+for(var i=0;i<this.numshisps;i++) {
 do {
-locations=this.generatateShip();
+locations=this.generatateship();
  }
 while(this.collision(locations));
 this.ships[i].locations=locations;
