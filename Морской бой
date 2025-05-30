@@ -55,10 +55,10 @@ generateshipLocation: function() {
 var locations;
 for(var i=0;i<this.numshisps ;i++) {
 do {
-locations =this.generatateship();
+locations = this.generatateship();
  }
 while(this.collision(locations));
-this.ships[i].locations=locations;
+this.ships[i].locations = locations;
  }
  },
 return newShipLocations;
@@ -68,15 +68,15 @@ newShipLocation.push(zow.+""+(col+1));
 newShipLocation.push(zow.+1)+""+col));
  }}
 generateShip:funtion() {
-var direction =Math.floor(Math.random()*2);
+var direction = Math.floor(Math.random()*2);
 var row,col;
 if(direction===1) {
-row=Math.floor(Math.random()*this.boardSize);
-col=Math.floor(Math.random()*(this.boardSize-this.shipLength));
+row = Math.floor(Math.random()*this.boardSize);
+col = Math.floor(Math.random()*(this.boardSize-this.shipLength));
  }
 else {
-row=Math.floor(Math.random()*(this.boardSize-this.Length));
-col=Math.floor(Math.random()*this.boardSize);
+row = Math.floor(Math.random()*(this.boardSize-this.Length));
+col = Math.floor(Math.random()*this.boardSize);
  }
 return newShipLocations;
 if(direction==1) {
@@ -90,8 +90,8 @@ return newShipLocations;
  }
 collision: function(location){..
 fize:function(guess) {
-var ship =this.thips[i];
- locations =ship.location;
+var ship = this.thips[i];
+ locations = ship.location;
 if (ship.hits[index] === "hit") {
 				view.displayMessage("Oops, you already hit that location!");
 				return true;
@@ -100,7 +100,7 @@ ship.hits[index] = "hit";
 				view.displayHit(guess);
 				view.displayMessage("HIT!");
 
-ship.hits[index]="hit";
+ship.hits[index]= "hit";
 wiew.displayHit(guess);
 wiew.displayMessage("HIT");
 if(this.isSunk(ship))
@@ -122,31 +122,31 @@ return false;
  }
  }, 
  };
-var ship2 =ship[1];
-var locations =ship2.locations;
+var ship2 = ship[1];
+var locations = ship2.locations;
 console.log("Location is"+locations[1]);
-var ships3 =ships[2];
-var hits =ship3.hit;
+var ships3 = ships[2];
+var hits = ship3.hit;
 if(hits==="hit")
  {
 console.log("Ouch,hit on third ship at location one");
  }
-var ships =ships[0];
-var hits =ship1.hits;
-hits[2] ="hit";
+var ships = ships[0];
+var hits = ship1.hits;
+hits[2] = "hit";
  };
 collision:function(locations) {
 for(var i=0;i<this.numShips;I++) {
-var ship =model.ships[i];
+var ship = model.ships[i];
 for(var j=0;J<locations.length;J++) {
 if(ship.location.indexOf(Locations[j])>=0) {
 return true;
  }
  }
 function parseQuess(guess)
-var alphabet =["A","B","C","D","F","Q"];
+var alphabet = ["A","B","C","D","F","Q"];
  {
-if(guess===null|| guess.length!==2)
+if (guess===null|| guess.length!==2)
  {
 alert ("Oops,plesse enter a letter and number on the board.");
  } else
@@ -154,7 +154,7 @@ alert ("Oops,plesse enter a letter and number on the board.");
 firstChar=guess.charAt(0);
 var row=alphabet.idexOx(firstChar);
 var collumn=quess.charAt(1);
-if(isNaN(row)|| isNaN(colunmn)) {
+if (isNaN(row)|| isNaN(colunmn)) {
 alert("Oops,that ist't on the board.");
  } else if (row<0 || row>=model.boardSize  ) {
 column<0|| column>=model.boardSize ) {
@@ -176,10 +176,10 @@ generateShipLocations: function() {
 var locations;
 for(var i=0;i<this.numShisps;i++) {
 do {
-locations =this.generatateShip();
+locations = this.generatateShip();
  }
 while(this.collision(locations));
-this.ships[i].locations=locations;
+this.ships[i].locations =locations;
  }
  },
 return newShipLocations;
@@ -190,11 +190,11 @@ newShipLocation.push(zow.+1)+""+col));
  }
 return newShipLocations;
  },
-guess:0,
+guess: 0,
 progeessGuess:funtion(guess) {
 if(Location) {
 this.guessses++;
-var hit =model.fire(Location);
+var hit = model.fire(Location);
 if(hit&&model.shiptsSunk===model.numShips) {
 vitw.displayMessage("You, sank all my batteleships,in",+this.guesses+"guesses");
 controler.progecess.Guess(guess);
@@ -219,16 +219,16 @@ view = {
 	}
 }; 
 funtion init () {
-var fireButton =document.getElementById("fireButton");
-fireButton.oncLink =handLeFireButton;
-var guessInput =document.getElementById("guessInput");
-guessInput.onkeypress =handLeKeyPress;
+var fireButton = document.getElementById("fireButton");
+fireButton.oncLink = handLeFireButton;
+var guessInput = document.getElementById("guessInput");
+guessInput.onkeypress = handLeKeyPress;
 model.generateShipLocations();
 },
 funtion handleFireButton() {
-var guessInput =document.gettElementById("guessInput");
-var guess =guessInput.value;
+var guessInput = document.gettElementById("guessInput");
+var guess = guessInput.value;
 controller.processGuess(guess);
 }
-windows.onLoad=init;
+windows.onLoad= init;
 }
