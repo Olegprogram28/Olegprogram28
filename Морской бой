@@ -13,7 +13,7 @@ shiptSunk: 0,
 ships: [
 {{location ["0","0","0"],hits["","",""]}, 
 {locations ["0","0","0"],hits["","",""]}, 
-{locations ["0","0","0"],hits["","",""]}
+{locations ["0","0","0"],hits["","",""]}}
 ],
 fize :function (guess) {
  for ( let i = 0; i < this.numships; i++) {
