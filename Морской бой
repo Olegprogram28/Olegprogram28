@@ -25,12 +25,12 @@ fize :function (guess) {
 	view.displayHit(guess);
 				view.displayMessage("HIT!");
 				return true;
- locations=ship.location;
+ locations =ship.location;
 if (ship.hits[index] === "hit") {
 				view.displayMessage("Oops, you already hit that location!");
 if(this.issunk(ship))
    is Sunk function:(ship)
-for(var i=0;i<this.shiplenght;i++)
+for (var i=0;i<this.shiplenght;i++)
 view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
      }
@@ -105,7 +105,7 @@ wiew.displayHit(guess);
 wiew.displayMessage("HIT");
 if(this.isSunk(ship))
    is Sunk function:(ship)
-for(var i=0;i<this.shipLenght;i++)
+for (var i=0;i<this.shipLenght;i++)
 view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
  }
@@ -122,11 +122,11 @@ return false;
  }
  }, 
  };
-var ship2=ship[1];
-var locations=ship2.locations;
+var ship2 =ship[1];
+var locations =ship2.locations;
 console.log("Location is"+locations[1]);
-var ships3=ships[2];
-var hits=ship3.hit;
+var ships3 =ships[2];
+var hits =ship3.hit;
 if(hits==="hit")
  {
 console.log("Ouch,hit on third ship at location one");
