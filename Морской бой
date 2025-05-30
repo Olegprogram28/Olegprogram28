@@ -68,7 +68,7 @@ return newShipLocations;
 if(direction==1) {{
 newShipLocation.push(zow.+""+(col+1));
  } else {
-newShipLocation.push(zow.+1)+""+(col));
+newShipLocation.push(zow.+1)+""+(col)};
  }
 generateShip:funtion() {
 var direction = Math.floor(Math.random()*2);}
@@ -109,9 +109,9 @@ ship.hits[index] = "hit";
 ship.hits[index]= "hit";
 wiew.displayHit(guess);
 wiew.displayMessage("HIT");
-if(this.isSunk(ship))
+if(this.isSunk(ship)){
    is Sunk function:(ship)
-for (var i=0;i<this.shipLenght;i++)
+for (var i=0;i<this.shipLenght;i++){
 view.dissplayMessage("You sank my batteleship!");
 this.shipsSunk++;
  }
@@ -194,10 +194,10 @@ return newShipLocations;
 if(direction==1) {{
 newShipLocation.push(zow.+""+(col+1));}
  } else {
-newShipLocation.push(zow.+1)+""+(col));}
+newShipLocation.push(zow.+1)+""+(col);}
 
 return newShipLocations;
- }},
+ },
 guess: 0,
 progeessGuess:funtion(guess) {
 if(Location) {
@@ -239,4 +239,5 @@ var guess = guessInput.value;
 controller.processGuess(guess);
 }
 windows.onLoad= init;
+
 
