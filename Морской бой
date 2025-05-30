@@ -55,7 +55,7 @@ generateshipLocation: function() {
 var locations;
 for(var i=0;i<this.numshisps ;i++) {
 do {
-locations=this.generatateship();
+locations =this.generatateship();
  }
 while(this.collision(locations));
 this.ships[i].locations=locations;
@@ -68,7 +68,7 @@ newShipLocation.push(zow.+""+(col+1));
 newShipLocation.push(zow.+1)+""+col));
  }}
 generateShip:funtion() {
-var direction=Math.floor(Math.random()*2);
+var direction =Math.floor(Math.random()*2);
 var row,col;
 if(direction===1) {
 row=Math.floor(Math.random()*this.boardSize);
@@ -90,8 +90,8 @@ return newShipLocations;
  }
 collision: function(location){..
 fize:function(guess) {
-var ship=this.thips[i];
- locations=ship.location;
+var ship =this.thips[i];
+ locations =ship.location;
 if (ship.hits[index] === "hit") {
 				view.displayMessage("Oops, you already hit that location!");
 				return true;
@@ -131,20 +131,20 @@ if(hits==="hit")
  {
 console.log("Ouch,hit on third ship at location one");
  }
-var ships=ships[0];
-var hits=ship1.hits;
-hits[2]="hit";
+var ships =ships[0];
+var hits =ship1.hits;
+hits[2] ="hit";
  };
 collision:function(locations) {
 for(var i=0;i<this.numShips;I++) {
-var ship=model.ships[i];
+var ship =model.ships[i];
 for(var j=0;J<locations.length;J++) {
 if(ship.location.indexOf(Locations[j])>=0) {
 return true;
  }
  }
 function parseQuess(guess)
-var alphabet=["A","B","C","D","F","Q"];
+var alphabet =["A","B","C","D","F","Q"];
  {
 if(guess===null|| guess.length!==2)
  {
@@ -176,7 +176,7 @@ generateShipLocations: function() {
 var locations;
 for(var i=0;i<this.numShisps;i++) {
 do {
-locations=this.generatateShip();
+locations =this.generatateShip();
  }
 while(this.collision(locations));
 this.ships[i].locations=locations;
@@ -219,15 +219,15 @@ view = {
 	}
 }; 
 funtion init () {
-var fireButton=document.getElementById("fireButton");
-fireButton.oncLink=handLeFireButton;
-var guessInput=document.getElementById("guessInput");
-guessInput.onkeypress=handLeKeyPress;
+var fireButton =document.getElementById("fireButton");
+fireButton.oncLink =handLeFireButton;
+var guessInput =document.getElementById("guessInput");
+guessInput.onkeypress =handLeKeyPress;
 model.generateShipLocations();
 },
 funtion handleFireButton() {
-var guessInput=document.gettElementById("guessInput");
-var guess=guessInput.value;
+var guessInput =document.gettElementById("guessInput");
+var guess =guessInput.value;
 controller.processGuess(guess);
 }
 windows.onLoad=init;
