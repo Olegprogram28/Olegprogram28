@@ -5,6 +5,7 @@
  // тестирование представления
 // для закомментирования больших кусков кода.
 // Elizabeth Robson & Eric Freeman 
+/*jslint plusplus: true */
 /*
 var model = {
 boardSize :7, 
