@@ -25,7 +25,7 @@ fize :function (guess) {
 	view.displayHit(guess);
 				view.displayMessage("HIT!");
 				return true;
- locations =ship.location;
+ locations = ship.location;
 if (ship.hits[index] === "hit") {
 				view.displayMessage("Oops, you already hit that location!");
 if(this.issunk(ship))
@@ -53,7 +53,7 @@ for (var i = 0; i < this.shiplength; i++)  {
 	},
 generateshipLocation: function() {
 var locations;
-for(var i=0;i<this.numshisps;i++) {
+for(var i=0;i<this.numshisps ;i++) {
 do {
 locations=this.generatateship();
  }
